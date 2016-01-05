@@ -14,9 +14,9 @@
         $.ajax({
           url: "http://stocksplosion.apsis.io/api/company",
           dataType: "jsonp",
-          jsonpCallback: "jsonp_callback",
           success: function(data) {
             console.log(data);
+            console.log('###');
           }
         })
       };
