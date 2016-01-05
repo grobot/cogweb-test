@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hurdur</title>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    This is my second web page
+    <script>
+      $.getJSON("http://stocksplosion.apsis.io/api/company", function(a, b) {
+        console.log(a,b);
+        console.log('###');
+      });
+    </script>
+  </body>
+</html>
+
