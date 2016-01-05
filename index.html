@@ -7,13 +7,10 @@
   <body>
     This is my first web page
     <script>
-      window.onload = function () {
-        console.log('firing this');
-        $.getJSON("http://stocksplosion.apsis.io/api/company", function(a, b) {
-          console.log(a,b);
-          console.log('###');
-        });
-      };
+      $.getJSON("http://stocksplosion.apsis.io/api/company", function(a, b) {
+        console.log(a,b);
+        console.log('###');
+      });
     </script>
   </body>
 </html>
