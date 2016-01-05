@@ -1,1 +1,23 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hurdur</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    This is my first web page
+    <script>
+      window.onload = function stuff() {
+        $.ajax({
+          url: "http://stocksplosion.apsis.io/api/company",
+          dataType: "jsonp",
+          jsonpCallback: "jsonp_callback"
+          success: function(data) {
+            console.log(data);
+          }
+        })
+      };
+    </script>
+  </body>
+</html>
+
