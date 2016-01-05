@@ -7,6 +7,9 @@
   <body>
     This is my first web page
     <script>
+      function jsonp_callback(asdf) {
+        console.log(asdf);
+      }
       window.onload = function stuff() {
         $.ajax({
           url: "http://stocksplosion.apsis.io/api/company",
